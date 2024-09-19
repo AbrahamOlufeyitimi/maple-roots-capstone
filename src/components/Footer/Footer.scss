@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.footer {
+    display: flex;
+
+    &__image {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__container {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 22px;
+        left: 315px;
+        width: 36px;
+        height: 36px;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 12px;
+        color: #ffffff;
+        background-color: #151515;
+        outline: none;
+    }
+
+    &__user {
+        width: 20px;
+        height: 20px;
+    }
+}
