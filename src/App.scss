@@ -1,0 +1,7 @@
+@use "./styles/typography" as *;
+@use "./styles/variables" as *;
+
+* {
+  font-family: 'Poppins';
+  color: $text-black;
+}

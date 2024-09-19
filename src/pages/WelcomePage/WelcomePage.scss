@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.welcome {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: $background-white;
+
+    &__image {
+        border-radius: 50%;
+        height: 30.25rem;
+        width: 30.25rem;
+        object-fit: cover;
+        margin-top: 20rem;
+        margin-left: 7.0rem;
+    }
+
+    &__title {
+        margin-top: 3.5rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    &__btn {
+        width: 70%;
+        height: 6.5rem;
+        font-size: 1.875rem;
+        margin-bottom: 4.375rem;
+    }
+}

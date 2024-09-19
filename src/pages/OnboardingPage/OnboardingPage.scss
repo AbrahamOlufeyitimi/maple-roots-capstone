@@ -1,0 +1,52 @@
+@use "../../styles/variables" as *;
+
+.onboarding {
+    // position: relative;
+
+    &__image {
+        // position: absolute;
+        top: '18px';
+        left: '24px';
+        width: 5%;
+        height: 5%;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    &__text {
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 15rem;
+        margin-left: 1.5rem;
+    }
+
+    &__form {
+        padding-left: 1.5rem;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+
+
+        &-label {
+            display: flex;
+            flex-direction: column;
+            padding-top: .9375rem;
+            font-size: 2rem;
+        }
+
+        &-input {
+            height: 5.25rem;
+
+            padding: 0rem .5rem;
+            border: 1px solid #505050;
+            box-sizing: border-box;
+            border-radius: .5rem;
+            box-shadow: 0rem 0rem .625rem rgba(0,0,0,0.1);
+            background-color: $input-grey;
+            color: $text-black;
+            font-size: 2rem;
+            line-height: 1.5rem;
+            outline: none;
+        }
+    }
+}

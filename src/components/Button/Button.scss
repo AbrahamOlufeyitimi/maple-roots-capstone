@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.btn{
+	width: 20%;
+	height: 2.5rem;
+	border-radius: 20px;
+	color: white;
+	font-weight: 600;
+	border: 3px solid darkgreen;
+	cursor: pointer;
+	color: white;
+	background-color: #151515;
+
+	&:hover{
+		background-color: darkgreen;
+		color: white;
+	}
+
+	&:focus{
+		background-color: darkgreen;
+		color: white;
+	}
+}

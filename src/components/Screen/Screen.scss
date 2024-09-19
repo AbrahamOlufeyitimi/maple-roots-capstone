@@ -1,0 +1,6 @@
+@use "../../styles/variables" as *;
+
+.screen {
+    background-color: $background-white;
+    height: 100vh;
+}
