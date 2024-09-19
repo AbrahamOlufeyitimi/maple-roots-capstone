@@ -1,10 +1,8 @@
 @use "../../styles/variables" as *;
 
 .onboarding {
-    // position: relative;
 
     &__image {
-        // position: absolute;
         top: '18px';
         left: '24px';
         width: 5%;
@@ -48,5 +46,14 @@
             line-height: 1.5rem;
             outline: none;
         }
+    }
+
+    &__btn {
+        width: 60%;
+        height: 6.5rem;
+        font-size: 1.875rem;
+        margin-top: 18rem;
+        margin-bottom: 4.375rem;
+        margin-left: 1.5rem;
     }
 }

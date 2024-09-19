@@ -1,5 +1,6 @@
 import Screen from "../../components/Screen/Screen";
 import Arrow from "../../assets/icons/arrow-left.svg";
+import Button from "../../components/Button/Button";
 import "./OnboardingPage.scss";
 
 
@@ -21,6 +22,8 @@ const OnbboardingPage = () => {
                     <input className="onboarding__form-input"  type="text" placeholder="Acadia University" />
                 </label>
             </form>
+
+            <Button className="onboarding__btn">Proceed</Button>
         </Screen>
     )
 }
