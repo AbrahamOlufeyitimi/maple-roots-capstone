@@ -1,0 +1,41 @@
+@use "../../styles/variables" as *;
+
+.test {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.resource {
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+
+
+
+    &__elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 0rem;
+    }
+
+    &__btn {
+        width: 40%;
+    }
+
+    // &__image {
+    //     border-radius: 50%;
+    //     height: 2.25rem;
+    //     width: 2.25rem;
+    //     aspect-ratio: 1 / 1;
+    //     object-fit: cover;
+    //     margin-top: 1.2rem;
+    //     background-color: #E1E1E1;
+    // }
+
+
+}

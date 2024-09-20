@@ -1,0 +1,50 @@
+@use "../../styles/variables" as *;
+
+
+.circle-checkbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.circle-checkbox:hover {
+    background-color: #f0f0f0;
+}
+
+.circle-checkbox:active {
+    background-color: #e0e0e0;
+    border-color: #007bff;
+}
+
+.checkmark {
+    display: none;
+    font-size: 24px;
+    color: #007bff;
+    transform: scale(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.checked .checkmark {
+    display: inline;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    cursor: pointer;
+    font-size: 16px;
+}
