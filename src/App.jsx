@@ -10,15 +10,14 @@ function App() {
 
 
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/"  element={<WelcomePage />}/>
-    //     <Route path="/onboarding"  element={<OnboardingPage />}/>
-    //     <Route path="/home"  element={<HomePage />}/>
-
-    //   </Routes>
-    // </BrowserRouter>
-    <ProfilePage />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"  element={<WelcomePage />}/>
+        <Route path="/onboarding"  element={<OnboardingPage />}/>
+        <Route path="/home"  element={<HomePage />}/>
+        <Route path="/profile"  element={<ProfilePage />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
