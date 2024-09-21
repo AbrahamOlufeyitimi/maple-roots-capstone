@@ -17,7 +17,7 @@ const HomePage = () => {
             <Resource className="homepage__resource" text="Setup a canadian bank account" link="https://www.td.com/us/en/personal-banking" />
             <Resource className="homepage__resource" text="Setup a canadian phone plan" link="https://www.virginplus.ca/en/home/index.html?province=ON&geoResult=failed" />
             <Resource className="homepage__resource" text="Get a Nova Scotian ID cards" link="https://novascotia.ca/sns/paal/rmv/paal275.asp" />
-            {/* <Resource className="homepage__resource" text="Get a social insurance number" link="https://www.canada.ca/en/employment-social-development/services/sin/apply.html" /> */}
+            <Resource className="homepage__resource" text="Get a social insurance number" link="https://www.canada.ca/en/employment-social-development/services/sin/apply.html" />
             <Footer />
         </Screen>
     );
