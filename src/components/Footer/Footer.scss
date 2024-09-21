@@ -6,9 +6,12 @@
     align-items: center;
     height: 6.25rem;
     background-color: $input-grey;
-    position: absolute;
-    top: 95%;
+    position: fixed;
+    // top: 95%;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 
     &__image {
         width: 80%;
@@ -20,8 +23,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 22px;
-        left: 315px;
+        // top: 22px;
+        // left: 315px;
         width: 36px;
         height: 36px;
         border: 0;
