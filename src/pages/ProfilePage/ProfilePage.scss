@@ -18,4 +18,60 @@
         object-fit: cover;
         margin-top: 10.2rem;
     }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        margin-top: 3.5rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 5rem;
+        margin-bottom: 1.0rem;
+    }
+
+    &__text {
+        font-size: 1.75rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    &__edit {
+        align-self: center;
+        width: 25%;
+        height: 3.5rem;
+        font-size: 1.125rem;
+    }
+
+
+    &__element {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 3rem;
+        margin-left: 4.5rem;
+    }
+
+    &__card {
+        width: 85%;
+        height: 6.25rem;
+        background-color: #d3d3d3;
+        border-radius: 12px;
+        margin-left: 3.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__tag {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+    }
 }
