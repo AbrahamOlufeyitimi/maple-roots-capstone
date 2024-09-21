@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
 import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -8,11 +9,14 @@ function App() {
 
 
   return (
-    <>
-    {/* <WelcomePage /> */}
-    {/* <OnboardingPage /> */}
-    <HomePage />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"  element={<WelcomePage />}/>
+        <Route path="/onboarding"  element={<OnboardingPage />}/>
+        <Route path="/home"  element={<HomePage />}/>
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 

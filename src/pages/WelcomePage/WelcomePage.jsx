@@ -1,9 +1,12 @@
 import Button from "../../components/Button/Button";
 import Student from "../../assets/international-student.jpg";
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./WelcomePage.scss";
 
 const WelcomePage = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="welcome">
 
@@ -13,7 +16,7 @@ const WelcomePage = () => {
                 <p className="welcome__text">Your personalized immigration checklist</p>
             </div>
 
-            <Button className="welcome__btn"> Get Started </Button>
+            <Button className="welcome__btn" onClick={() => navigate('/onboarding')}> Get Started </Button>
 
         </div>
     )

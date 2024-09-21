@@ -1,4 +1,5 @@
 import Screen from "../../components/Screen/Screen";
+import { useNavigate } from "react-router-dom";
 import Arrow from "../../assets/icons/arrow-left.svg";
 import Button from "../../components/Button/Button";
 import "./OnboardingPage.scss";
@@ -6,6 +7,7 @@ import "./OnboardingPage.scss";
 
 
 const OnbboardingPage = () => {
+    const navigate = useNavigate();
     return (
         <Screen className = "onboarding">
             <img className="onboarding__image" src={Arrow} alt="a black arrow that points left" />
@@ -23,7 +25,7 @@ const OnbboardingPage = () => {
                 </label>
             </form>
 
-            <Button className="onboarding__btn">Proceed</Button>
+            <Button className="onboarding__btn" onClick={() => navigate('/home')}>Proceed</Button>
         </Screen>
     )
 }
