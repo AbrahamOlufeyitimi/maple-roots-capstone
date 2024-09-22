@@ -24,7 +24,7 @@ A lot of young people take on the huge challenge to move away from their family 
 - As a user, i want to be able to know the first steps i should take as a new student in the country
 - As a user, i want to keep track of the steps i have already completed.
 - As a user, i want to have a single location that can direct me to where i can find more information about a resource.
-- As a user, i want to be able to specify my city and school
+- As a user, i want to be able to specify my school
 
 
 ## Implementation
@@ -55,63 +55,95 @@ A lot of young people take on the huge challenge to move away from their family 
 - Welcome page
 - Onboarding
 - Home page
-- Notifications
 - User profile
 
 ### Mockups
 
-
-![alt text](IMG_9980-1.jpg)
+![alt text](Welcome-&-Onboarding-page.png)
+![alt text](Homepage.png)
+![alt text](Profile-page.png)
 
 ### Data
 
-Describe your data and the relationships between the data points. You can show this visually using diagrams, or write it out. 
+
+![alt text](data-relationship.png)
+
 
 ### Endpoints
 
-POST /register
-Description: Register a new user.
+POST /api/users
+Description: Create a new user.
 Parameters: name, school
 Response:
 
 {
- "message": "User registered successfully", "user_id": 1 
+  "name": "John Doe",
+  "school": "ABC University"
 }
 
 
-GET /users/
-Description: Get user profile details.
+GET /api/users/
+Description: Get a user
 Parameter: id (User ID)
 Response: 
 
 { 
+    "id": 1
     "user_id": 1, 
-    "name": "John Doe", 
-    "email": "john@example.com", 
-    "city": "Halifax", 
+    "name": "John Doe",   
     "school": "Dalhousie University" 
 }
 
+PUT /api/users/
+Description: update a user by their id
+Parameter: id, updatedUser
 
-GET /resources
-Description: Get resources based on city.
-Parameter: city
+{
+    "name": "Jane Doe",
+    "school": "XYZ University"
+}
+
+
+GET /api/resources
+Description: Get resources based on school.
+Parameter: school
 Response: 
 
 [ 
     { 
-        "resource_id": 1, 
-        "title": "Health Insurance", 
-        "description": "Information about health insurance", 
+        "id": 1, 
+        "resource": "Information about health insurance", 
         "link": "https://insurance.com" 
     } 
 ]
 
+PUT /api/resources
+Description: Get resources based on school.
+Parameter: school
+
+{
+  "resource": "Get your health card",
+  "link": "www.healthcard.com",
+  "completed": true
+}
+
+POST /api/resources
+Description: Add a new resource.
+Parameter: newResource, link
+
+{
+  "resource": "Find a doctor",
+  "link": "www.findadoctor.com"
+}
+
+DELETE /api/resources
+Description:Delete a resource by ID.
+Parameter: id
 
 ## Roadmap
 
 -Create client
-    -react project with routes  and boilerplate pages
+    -react project with routes and boilerplate pages
 
 -Create server
     - express project with routing
@@ -124,16 +156,13 @@ Response:
 
 -Feature: Welcome page
 
--Feature: List the resources based on the city
+-Feature: List the resources based on the school
     - implement the list of all the resources for the user
     - implement the ability to check mark the resources that are completed
 
 -Feature: User profile
 
 -Feature: Onboarding
-
--Feature: Notifications
-    - Implement hide and show notifications option
 
 -Feature: Homepage
     -implement user profile icon to link to user profile
@@ -149,4 +178,7 @@ Response:
 
 -add a change profile picture feature
 -add a join the community feature to connect the user to other students.
+
+-Feature: Notifications
+    - Implement hide and show notifications option
 

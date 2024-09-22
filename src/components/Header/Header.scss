@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+
+.header {
+    height: 6.25rem;
+    background-color: $grey;
+    margin-top: 0;
+    padding-top: 1.875rem;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.875rem;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,48 @@
+@use "../../styles/variables" as *;
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.25rem;
+    background-color: $grey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    &__image {
+        width: 80%;
+        height: 80%;
+    }
+
+    &__container {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: .75rem;
+        color: $background-white;
+        background-color: #151515;
+        outline: none;
+
+        &:active {
+            background-color: green;
+        }
+
+        &:hover {
+            background-color: lightblue;
+        }
+    }
+
+    &__user {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+}
