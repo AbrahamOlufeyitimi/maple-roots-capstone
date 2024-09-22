@@ -101,7 +101,6 @@ const Resource = () => {
                 <div className="resource__status">
                     <CircleCheckbox />
                 </div>
-                <hr />
             </div>
                 ))
             ) : (

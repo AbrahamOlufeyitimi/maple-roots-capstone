@@ -9,12 +9,17 @@
     display: flex;
     height: 120px;
     justify-content: space-around;
+    border-bottom: 0.0625rem solid grey;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 
 
     &__elements {
         display: flex;
         flex-direction: column;
+        width: 80%;
+        margin-left: 1.5rem;
     }
 
     &__text{
@@ -25,6 +30,10 @@
 
     &__btn {
         width: 40%;
+    }
+
+    &__status {
+        width: 20%;
     }
 
     // &__image {

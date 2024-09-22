@@ -2,9 +2,9 @@ import "./Header.scss";
 
 const Header = () => {
     return (
-        <>
-            <h1 className="title">Maple Roots</h1>
-        </>
+        <div className="header">
+            <h1 className="header__title">Maple Roots</h1>
+        </div>
     );
 }
 
