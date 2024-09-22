@@ -35,7 +35,8 @@ const OnboardingPage = () => {
 
         if (Object.keys(formErrors).length === 0) {
             console.log("Form Data:", formData);
-            navigate('/home');
+            navigate('/home', { state: { school: formData.school } });
+            navigate('/profile', { state: { name: formData.name } });
         } else {
             setErrors(formErrors);
         }

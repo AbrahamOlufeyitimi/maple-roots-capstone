@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import Screen from "../../components/Screen/Screen";
 import Student from "../../assets/student-pic.jpg";
 import Button from "../../components/Button/Button";
@@ -5,6 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import "./ProfilePage.scss";
 
 const ProfilePage = () => {
+    const location = useLocation();
+    const { name } = location.state || { name: "New Student" };
     return (
         <Screen>
             <div className="profile">
@@ -13,7 +16,7 @@ const ProfilePage = () => {
                 </div>
 
                 <div className="profile__wrapper">
-                    <p className="profile__name">New Student</p>
+                    <p className="profile__name">{name}</p>
                     <p className="profile__text">Settle in with ease, thrive with confidence</p>
                     <Button className="profile__edit">Customize Profile</Button>
                 </div>
