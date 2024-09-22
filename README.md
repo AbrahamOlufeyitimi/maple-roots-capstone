@@ -60,7 +60,7 @@ A lot of young people take on the huge challenge to move away from their family 
 ### Mockups
 
 ![alt text](Welcome-&-Onboarding-page.png)
-![alt text](Home-page.png)
+![alt text](Homepage.png)
 ![alt text](Profile-page.png)
 
 ### Data
