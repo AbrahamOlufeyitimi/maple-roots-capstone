@@ -43,7 +43,6 @@
 
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { useUserContext } from "../../contexts/UserContext";
 import Button from "../Button/Button";
 import CircleCheckbox from "../CircleCheckbox/CircleCheckbox";
 import { MapleRootsApi } from "../../scripts/mapleroots-api";
@@ -55,11 +54,8 @@ const Resource = () => {
     const [loading, setLoading] = useState(true);
     const api = new MapleRootsApi();
 
-    // const location = useLocation();
-    // const school = location.state?.school;
-
-    const { user } = useUserContext();
-    const school = user?.school;
+    const location = useLocation();
+    const school = location.state?.school;
 
     const fetchResources = async (school) => {
         try { 
@@ -79,7 +75,7 @@ const Resource = () => {
 
     useEffect(() => {
         if (school) {
-            fetchResources(school);
+        fetchResources(school);
         }
     }, [school]);
 

@@ -1,15 +1,13 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Screen from "../../components/Screen/Screen";
 import { useNavigate } from "react-router-dom";
 import Arrow from "../../assets/icons/arrow-left.svg";
 import Button from "../../components/Button/Button";
-import { UserContext } from "../../contexts/UserContext";
 import "./OnboardingPage.scss";
 
 
 
 const OnboardingPage = () => {
-    const { setUser } = useContext(UserContext);
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({ name: "", school: "" });
@@ -37,9 +35,8 @@ const OnboardingPage = () => {
 
         if (Object.keys(formErrors).length === 0) {
             console.log("Form Data:", formData);
-            // navigate('/home', { state: { school: formData.school } });
-            // navigate('/profile', { state: { name: formData.name } });
-            navigate('/home');
+            localStorage.setItem("userName", JSON.stringify(formData.name));
+            navigate('/home', { state: { school: formData.school } });
         } else {
             setErrors(formErrors);
         }
