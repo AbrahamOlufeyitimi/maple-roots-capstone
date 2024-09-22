@@ -8,7 +8,6 @@ export class MapleRootsApi {
         if (navigate) this.navigate = navigate;
     }
 
-    // Users
     async createUser(newUser) {
         try {
             const response = await axios.post(this.USERS_URL, newUser);
@@ -40,7 +39,6 @@ export class MapleRootsApi {
         }
     }
 
-    // Resources
     async getResources(sort_by, order_by, s) {
         const request = `${this.RESOURCES_URL}`;
         try {
@@ -89,11 +87,6 @@ export class MapleRootsApi {
     }
 
 
-
-
-
-
-
     async getAllResources({school }) {
         try {
             const response = await axios.get(this.RESOURCES_URL, {
@@ -105,11 +98,6 @@ export class MapleRootsApi {
             throw error;
         }
     }
-
-
-
-
-
 
     async deleteResource(id) {
         const request = `${this.RESOURCES_URL}/${id}`;

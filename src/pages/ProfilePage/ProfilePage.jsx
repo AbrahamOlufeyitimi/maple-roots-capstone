@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import Screen from "../../components/Screen/Screen";
 import Student from "../../assets/student-pic.jpg";
 import Button from "../../components/Button/Button";
@@ -6,8 +5,6 @@ import Footer from "../../components/Footer/Footer";
 import "./ProfilePage.scss";
 
 const ProfilePage = () => {
-    // const location = useLocation();
-    // const { name } = location.state || { name: "New Student" };
 
     const name = JSON.parse(localStorage.getItem("userName")) || "New Student";
     return (

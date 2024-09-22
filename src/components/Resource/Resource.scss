@@ -7,7 +7,7 @@
 
 .resource {
     display: flex;
-    height: 120px;
+    height: 7.5rem;
     justify-content: space-around;
     border-bottom: 0.0625rem solid grey;
     padding-top: 1rem;
@@ -35,16 +35,6 @@
     &__status {
         width: 20%;
     }
-
-    // &__image {
-    //     border-radius: 50%;
-    //     height: 2.25rem;
-    //     width: 2.25rem;
-    //     aspect-ratio: 1 / 1;
-    //     object-fit: cover;
-    //     margin-top: 1.2rem;
-    //     background-color: #E1E1E1;
-    // }
 
 
 }

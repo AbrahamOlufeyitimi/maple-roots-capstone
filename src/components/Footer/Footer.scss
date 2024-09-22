@@ -22,12 +22,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 36px;
-        height: 36px;
+        width: 2.25rem;
+        height: 2.25rem;
         border: 0;
         box-sizing: border-box;
-        border-radius: 12px;
-        color: #ffffff;
+        border-radius: .75rem;
+        color: $background-white;
         background-color: #151515;
         outline: none;
 
@@ -41,8 +41,8 @@
     }
 
     &__user {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
 }
