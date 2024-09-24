@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     height: 6.25rem;
-    background-color: $grey;
+    background-color: $pacific;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -22,17 +22,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2.25rem;
-        height: 2.25rem;
+        width: 3.25rem;
+        height: 3.25rem;
         border: 0;
         box-sizing: border-box;
         border-radius: .75rem;
         color: $background-white;
-        background-color: #151515;
+        background-color: #175676;
         outline: none;
 
         &:active {
-            background-color: green;
+            background-color: $lapis;
         }
 
         &:hover {

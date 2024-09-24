@@ -24,6 +24,18 @@
 
     &__btn {
         width: 40%;
+        border: 0.1875rem solid $lapis;
+        background-color: $pacific;
+
+        &:hover{
+            background-color: $lapis;
+            color: white;
+        }
+    
+        &:focus{
+            background-color: $lapis;
+            color: white;
+        }
     }
 
     &__status {

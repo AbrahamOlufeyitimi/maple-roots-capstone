@@ -2,7 +2,7 @@
 
 .two-color-bg {
     background: 
-        linear-gradient(to bottom, $grey 3rem, transparent 0), 
+        linear-gradient(to bottom, $pacific 3rem, transparent 0), 
         url('../../assets/maple-tree.jpg') no-repeat center;
     background-size: cover;
 
@@ -13,6 +13,6 @@
         min-height: calc(100vh - 8.125rem - 2.375rem);
         width: 81vw;
         z-index: 1000;
-        background-color: rgba(235, 239, 242, 0.92);
+        background-color: rgba(204, 230, 244, 0.92);
     }
 }
