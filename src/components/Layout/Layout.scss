@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+
+.two-color-bg {
+    background: 
+        linear-gradient(to bottom, $grey 3rem, transparent 0), 
+        url('../../assets/maple-tree.jpg') no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+
+    .main {
+        min-height: calc(100vh - 8.125rem - 2.375rem);
+        width: 81vw;
+        z-index: 1000;
+        background-color: rgba(235, 239, 242, 0.92);
+    }
+}
