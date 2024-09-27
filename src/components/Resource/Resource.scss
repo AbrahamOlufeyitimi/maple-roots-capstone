@@ -1,10 +1,5 @@
 @use "../../styles/variables" as *;
 
-.test {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 .resource {
     display: flex;
     height: 7.5rem;
@@ -13,13 +8,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-
-
     &__elements {
         display: flex;
         flex-direction: column;
         width: 80%;
         margin-left: 1.5rem;
+        gap: 1.5625rem;
     }
 
     &__text{
@@ -30,11 +24,22 @@
 
     &__btn {
         width: 40%;
+        border: 0.1875rem solid $lapis;
+        background-color: $pacific;
+
+        &:hover{
+            background-color: $lapis;
+            color: white;
+        }
+    
+        &:focus{
+            background-color: $lapis;
+            color: white;
+        }
     }
 
     &__status {
         width: 20%;
     }
-
 
 }
