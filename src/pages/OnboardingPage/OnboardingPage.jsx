@@ -35,7 +35,6 @@ const OnboardingPage = () => {
 
         if (Object.keys(formErrors).length === 0) {
             console.log("Form Data:", formData);
-            // localStorage.setItem("userName", JSON.stringify(formData.name));
             localStorage.setItem("userName", formData.name);
             localStorage.setItem("school", formData.school);
             navigate('/home', { state: { school: formData.school } });

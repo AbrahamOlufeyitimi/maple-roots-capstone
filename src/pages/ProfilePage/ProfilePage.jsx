@@ -6,7 +6,6 @@ import "./ProfilePage.scss";
 
 const ProfilePage = () => {
 
-    // const name = JSON.parse(localStorage.getItem("userName")) || "New Student";
     const name = localStorage.getItem("userName") || "New Student";
     return (
         <Screen>

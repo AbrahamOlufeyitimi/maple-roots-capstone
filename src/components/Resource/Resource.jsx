@@ -12,7 +12,6 @@ const Resource = () => {
     const api = new MapleRootsApi();
 
     const location = useLocation();
-    // const school = location.state?.school;
     const school = location.state?.school || localStorage.getItem("school");
 
 
@@ -21,7 +20,6 @@ const Resource = () => {
             console.log(school);
             
             const resourcesData = await api.getAllResources({ school });
-            console.log(resourcesData);
             
             setResources(resourcesData);
         } catch (error) {
